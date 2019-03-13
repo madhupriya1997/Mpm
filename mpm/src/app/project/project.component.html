@@ -1,0 +1,13 @@
+
+    
+    <div class="textng">
+     
+          <div *ngFor="let project of projects"
+            [class.selected]="project === selectedProject"
+            (click)="onSelect(project)">
+            <a routerLink="/project-list/{{project.id}}/overview">Project  <span>{{project.id}}</span> {{project.name}}</a>
+          </div>
+      </div>
+    
+  
+      

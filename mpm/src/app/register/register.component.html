@@ -1,0 +1,24 @@
+<div>
+<a routerLink="/login">Register</a>
+<a routerLink="/login">Login</a>
+</div>
+<br/>
+<div style="text-align:center;">
+  <form [formGroup]="registerForm">
+    <label for="InputEmail">Email Id</label> 
+    <input formControlName="email" type="email" name="email" placeholder="Email Id">
+    <br/>
+    <label for="InputName">Name</label>
+    <input formControlName="username" type="text" name="name" placeholder="Username">
+    <br/>
+    <label for="Inputpassword">Password</label>
+    <input formControlName="password" type="password" name="password" placeholder="Password">
+    <br/>
+    <label for="CpasswordInput">Confirm Password</label>
+    <input formControlName="cpass" type="password" name="cpassword" placeholder="Confirm Password">
+    <br/>
+    <button (click)="register()">Register</button>
+    <button (click)="movetoLogin()">Login</button>
+    <button></button>
+  </form>
+</div>
